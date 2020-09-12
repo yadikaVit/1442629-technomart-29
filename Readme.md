@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Влада Афонина](https://up.htmlacademy.ru/htmlcss/29/user/1442629).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Остаповец](https://htmlacademy.ru/profile/seraphim).
 
 ---
 
