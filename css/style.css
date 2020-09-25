@@ -1,4 +1,73 @@
 @charset "utf-8"
+
+/*fonts*/
+
+/* cuprum-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Cuprum';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cuprum Regular'), local('Cuprum-Regular'),
+  url('../fonts/cuprum-v12-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/cuprum-v12-latin_cyrillic-regular.woff') format('woff'); /* Modern Browsers */
+  font-display: swap;
+}
+
+/* cuprum-italic - latin_cyrillic */
+@font-face {
+  font-family: 'Cuprum';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Cuprum Italic'), local('Cuprum-Italic'),
+  url('../fonts/cuprum-v12-latin_cyrillic-italic.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/cuprum-v12-latin_cyrillic-italic.woff') format('woff'); /* Modern Browsers */
+  font-display: swap;
+}
+
+/* cuprum-700 - latin_cyrillic */
+@font-face {
+  font-family: 'Cuprum';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Cuprum Bold'), local('Cuprum-Bold'),
+  url('../fonts/cuprum-v12-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/cuprum-v12-latin_cyrillic-700.woff') format('woff'); /* Modern Browsers */
+  font-display: swap;
+}
+
+/* cuprum-700italic - latin_cyrillic */
+@font-face {
+  font-family: 'Cuprum';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Cuprum Bold Italic'), local('Cuprum-BoldItalic'),
+  url('../fonts/cuprum-v12-latin_cyrillic-700italic.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/cuprum-v12-latin_cyrillic-700italic.woff') format('woff'); /* Modern Browsers */
+  font-display: swap;
+}
+
+/* pt-sans-regular - latin_cyrillic */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'),
+  url('../fonts/pt-sans-v12-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/pt-sans-v12-latin_cyrillic-regular.woff') format('woff'); /* Modern Browsers */
+  font-display: swap;
+}
+
+/* pt-sans-700 - latin_cyrillic */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans Bold'), local('PTSans-Bold'),
+  url('../fonts/pt-sans-v12-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/pt-sans-v12-latin_cyrillic-700.woff') format('woff'); /* Modern Browsers */
+  font-display: swap;
+}
+
 :root {
   --black-basic: #000000;
   --white-basic: #ffffff;
@@ -40,11 +109,10 @@ body {
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
-  color: var(--black-basic);
-  background-color: var(--white-basic);
+
 }
 
-.page a {
+.page a, page-catalog a {
   text-decoration: none;
 }
 
@@ -61,14 +129,10 @@ body {
 /* header */
 
 .header-top {
-  width: 1200px;
-  height: 42px;
   background-color: var(--gray-header-top);
 }
 
-.main-logo .main-logo:hover {
-  width: 220px;
-  height: 47px;
+.main-logo, .main-logo:hover {
   background-color: var(--red-basic);
   box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 }
@@ -106,8 +170,7 @@ body {
 
 .header-middle {
   background-color: var(--white-background-rgba);
-  width: 1200px;
-  height: 320px;
+
 }
 
 .header-text {
@@ -148,9 +211,7 @@ body {
 }
 
 .header-bottom {
-  width: 940px;
-  height: 60px;
-  background-color: var(--gray-navigation);
+   background-color: var(--gray-navigation);
   box-shadow: inset 0px -5px 0px var(--gray-header-top);
 }
 
@@ -175,8 +236,7 @@ body {
 /*main */
 
 .features {
-  width: 940px;
-  height: 409px;
+
 }
 
 .feature-item {
@@ -237,8 +297,6 @@ body {
 }
 
 .popular {
-  width: 940px;
-  height: 89px;
   background-color: var(--gray-title);
 }
 
@@ -350,8 +408,6 @@ body {
 .logo-manufacturers:hover, .logo-manufacturers:active {?}
 
 .service {
-  width: 1200px;
-  height: 522px;
   background-color: var(--gray-background-servise);
 }
 
@@ -373,8 +429,7 @@ body {
 }
 
 .service-item {
-  width: 240px;
-  height: 61px;
+
 }
 
 .service-link {
@@ -414,8 +469,6 @@ body {
 /*footer*/
 
 .footer-top {
-  width: 1200px;
-  height: 193px;
   background-color: var(--gray-navigation);
 }
 
@@ -452,8 +505,6 @@ body {
 }
 
 .footer-bottom {
-  width: 1200px;
-  height: 107px;
   background-color: var(--gray-header-top);
 }
 
@@ -516,8 +567,6 @@ body {
   text-transform: uppercase;
   color: var(--gray-navigation);
   background-color: #F2F6F8;
-  width: 940px;
-  height: 89px;
 }
 
 /*-- Здесь будет стилизация фильтра */
@@ -555,8 +604,6 @@ body {
 }
 
 .catalog-text {
-  width: 1200px;
-  height: 261px;
   background-color: var(--gray-background-servise);
 }
 
