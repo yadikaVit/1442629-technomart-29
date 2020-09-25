@@ -1,4 +1,4 @@
-@charset "utf-8"
+@charset "utf-8";
 
 /*fonts*/
 
@@ -17,8 +17,8 @@
   font-family: 'Cuprum';
   font-style: italic;
   font-weight: 400;
-  url('../fonts/cuprum.woff2') format('woff2'), /* Super Modern Browsers */
-  url('../fonts/cuprum.woff') format('woff'); /* Modern Browsers */
+  url('../fonts/cuprumitalic.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/cuprumitalic.woff') format('woff'); /* Modern Browsers */
   font-display: swap;
 }
 
@@ -27,8 +27,8 @@
   font-family: 'Cuprum';
   font-style: normal;
   font-weight: 700;
-  url('../fonts/cuprum.woff2') format('woff2'), /* Super Modern Browsers */
-  url('../fonts/cuprum.woff') format('woff'); /* Modern Browsers */
+  url('../fonts/cuprumbold.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/cuprumbold.woff') format('woff'); /* Modern Browsers */
   font-display: swap;
 }
 
@@ -38,8 +38,8 @@
   font-style: italic;
   font-weight: 700;
   src: local('Cuprum Bold Italic'), local('Cuprum-BoldItalic'),
-  url('../fonts/cuprum.woff2') format('woff2'), /* Super Modern Browsers */
-  url('../fonts/cuprum.woff') format('woff'); /* Modern Browsers */
+  url('../fonts/cuprumbolditalic.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/cuprumbolditalic.woff') format('woff'); /* Modern Browsers */
   font-display: swap;
 }
 
@@ -58,8 +58,8 @@
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
-  url('../fonts/ptsans.woff2') format('woff2'), /* Super Modern Browsers */
-  url('../fonts/ptsans.woff') format('woff'); /* Modern Browsers */
+  url('../fonts/ptsansbold.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/ptsansbold.woff') format('woff'); /* Modern Browsers */
   font-display: swap;
 }
 
@@ -206,7 +206,7 @@ body {
 }
 
 .header-bottom {
-   background-color: var(--gray-navigation);
+  background-color: var(--gray-navigation);
   box-shadow: inset 0px -5px 0px var(--gray-header-top);
 }
 
@@ -231,7 +231,6 @@ body {
 /*main */
 
 .features {
-
 }
 
 .feature-item {
@@ -424,7 +423,6 @@ body {
 }
 
 .service-item {
-
 }
 
 .service-link {
