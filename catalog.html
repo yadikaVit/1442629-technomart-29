@@ -53,7 +53,7 @@
               <a class="header-navigation-link" href="#">Компания</a>
             </li>
             <li class="header-navigation-item">
-              <a class="header-navigation-link" href="catalog.html">Каталог</a>
+              <a class="header-navigation-link" href="#">Каталог</a>
             </li>
             <li class="header-navigation-item">
               <a class="header-navigation-link" href="#">Новости</a>
@@ -79,12 +79,16 @@
       <div class="popular-container">
         <ul class="breadcrumbs-list">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Каталог</a>
+            <a class="breadcrumbs-link" href="index.html">
+              <img src="img/icon-home.svg">
+            </a>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="#">Каталог</a>
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="#">Инструмент</a>
           </li>
-          <li class="breadcrumbs-item">
+          <li class="breadcrumbs-item breadcrumbs-current">
             <a class="breadcrumbs-link" href="#">Перфораторы</a>
           </li>
         </ul>
@@ -93,24 +97,49 @@
       <h1 class="title-catalog popular-container"><span>Перфораторы</span></h1>
 
       <section>
-        <h2 >Фильтр:</h2>
-        <p>Цена:<p>
-         <!-- Здесь будет радиокнопки -->
-        <h2>Производители:</h2>
-        <ul>
-          <li>Bosh</li>
-          <li>Интерскол</li>
-          <li>Makita</li>
-          <li>DeWalt</li>
-          <li>Hitachi</li>
-        </ul>
-        <p>Питание</p>
-        <ul>
-          <li>Аккумуляторные</li>
-          <li>Сетевые<li>
-        </ul>
-        <a href="#">Показать</a>
-        <!-- кнопка отправки формы -->
+        <h2 class="filter">Фильтр:</h2>
+
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Производители:</legend>
+            <ul>
+              <li class="filter-option filter-checkbox">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="Bosh" id="filter-Bosh" checked>
+                <label for="filter-Bosh">Bosh</label>
+              </li>
+              <li class="filter-option filter-checkbox">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="interscol" id="filter-interscol">
+                <label for="filter-interscol">Интерскол</label>
+              </li>
+              <li class="filter-option filter-checkbox">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="Makita" id="filter-Makita" checked>
+                <label for="filter-Makita">Makita</label>
+              </li>
+              <li class="filter-option filter-checkbox">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="malin-DeWalt" id="filter-DeWalt">
+                <label for="filter-DeWalt">DeWalt</label>
+              </li>
+              <li class="filter-option filter-checkbox">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="Hitachi" id="filter-Hitachi">
+                <label for="filter-Hitachi">Hitachi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Питание:</legend>
+            <ul>
+              <li class="filter-option filter-radio">
+                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-group" value="battery" id="filter-battery" checked>
+                <label for="filter-battery">Аккумуляторные</label>
+              </li>
+              <li class="filter-option filter-radio">
+                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-group" value="electricity" id="filter-electricity">
+                <label for="filter-electricity">Сетевые</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit" class="filter-button button">Показать</button>
+        </form>
       </section>
 
       <section>
@@ -120,6 +149,17 @@
           <li>По цене</li>
           <li>По типу</li>
           <li>По функционалу</li>
+          <li>
+            <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.66235 0L11.1624 10L0.162354 10" fill="#EE3643"/>
+            </svg>
+          </li>
+          <li>
+            <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.66235 10L0.162354 0H11.1624" fill="#C5C5C5"/>
+            </svg>
+          </li>
+
         </ul>
       </section>
 
@@ -327,13 +367,22 @@
           <h2 class="visually-hidden">Соц сети</h2>
           <ul class="social-list">
             <li>
-              <a class="social-button" href="#">Вконтакте</a>
+              <a class="social-button" href="#">
+                <span class="visually-hidden">Вконтакте</span>
+                <img src="img/icon-vk.svg">
+              </a>
             </li>
             <li>
-              <a class="social-button" href="#">Фейсбук</a>
+              <a class="social-button" href="#">
+                <span class="visually-hidden">Фейсбук</span>
+                <img src="img/icon-fb.svg">
+              </a>
             </li>
             <li>
-              <a class="social-button" href="#">Инстаграм</a>
+              <a class="social-button" href="#">
+                <span class="visually-hidden">Инстаграм</span>
+                <img src="img/icon-insta.svg">
+              </a>
             </li>
           </ul>
         </div>
