@@ -92,7 +92,7 @@ body {
 
 }
 
-.page a, page-catalog a {
+.page a, .page-catalog a {
   text-decoration: none;
 }
 
@@ -109,11 +109,11 @@ body {
 }
 /*Grid*/
 
-.page {
+.page, .page-catalog {
   height: 100%;
 }
 
-.page-body {
+.page-body, .catalog-body {
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
@@ -388,6 +388,11 @@ body {
 }
 
 .card {
+  display: grid;
+  grid-template-rows: 1fr min-content  min-content;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
   list-style: none;
   background-color: var(--white-basic);
   border: 1px solid var(--gray-border);
@@ -487,7 +492,7 @@ body {
 
 /* service */
 
-.service {
+.service, .catalog-text {
 
   background-color: var(--gray-background-servise);
 }
@@ -663,7 +668,37 @@ body {
 
 /*catalog*/
 
+.persona {
+  font-size: 16px;
+  line-height: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  color: var(--gray-navigation);
+}
+
+.persona:hover {
+  color: var(--red-basic);
+}
+
+.persona:active {
+  color: var(--gray-basic-light);
+}
+
+.persona-name {
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
+  color: var(--black-basic);
+  background-color: var(--white-basic);
+}
+
 .breadcrumbs-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 

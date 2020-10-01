@@ -8,37 +8,42 @@
   </head>
   <body class="catalog-body">
 
-    <header class="main-header">
+  <header class="main-header">
 
-      <section class="header-top">
-        <h2>Панель пользователя</h2>
-        <a class="main-logo" href="index.html">
-          <img src="img/logo.svg" width="106.83" height="16.9" alt="Логотип интернет-магазина «Техномарт»">
+    <section class="header-top">
+      <div class="header-top-container">
+        <h2 class="visually-hidden">Панель пользователя</h2>
+        <a class="main-logo">
+          <img src="img/logo.svg" width="107" height="17" alt="Логотип интернет-магазина «Техномарт»">
         </a>
+        <a class="search-header-top" href="#">Поиск</a>
         <div class="header-top-navigation">
-          <a class="search-header-top" href="#">Поиск</a>
           <a class="bookmarks-header-top" href="#">Закладки</a>
           <a class="cart-header-top" href="#">Корзина</a>
           <a class="order-header-top" href="#">Оформить заказ</a>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="header-middle">
-        <h2>Контакты и личный кабинет</h2>
+    <section class="header-middle">
+      <div class="header-middle-container">
+        <h2 class="visually-hidden">Контакты и личный кабинет</h2>
         <i class="header-text">Интеренет-магазин строительных материалов и интрументов для ремонта</i>
         <div class="contact-header">
           <a class="phone-header" href="tel:+78125550555">+7 (812) 555-05-55</a>
           <p class="adress-header">г. Санкт-Петербург, Б. Конюшенная, д. 19/8</p>
         </div>
-        <div class="authorization-header">
-          <a href="#">Равшан Джамшутович</a>
-          <a href="#">Регистрация</a>
-          <!--будет форма входа-->
+        <div class="user">
+          <a class="persona-name" href="#">Равшан Джамшутович</a>
+          <a class="persona" href="#">Мои заказы</a>
+          <a class="persona" href="#">Личный кабинет</a>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="header-bottom">
-        <h2>Главная навигация</h2>
+    <section class="header-bottom">
+      <div class="header-bottom-container">
+        <h2 class="visually-hidden">Главная навигация</h2>
         <nav class="header-navigation">
           <ul class="header-navigation-list">
             <li class="header-navigation-item">
@@ -48,7 +53,7 @@
               <a class="header-navigation-link" href="#">Компания</a>
             </li>
             <li class="header-navigation-item">
-              <a class="header-navigation-link">Каталог</a>
+              <a class="header-navigation-link" href="catalog.html">Каталог</a>
             </li>
             <li class="header-navigation-item">
               <a class="header-navigation-link" href="#">Новости</a>
@@ -64,33 +69,31 @@
             </li>
           </ul>
         </nav>
-      </section>
-
-
-    </header>
+      </div>
+    </section>
+  </header>
 
     <main class="container">
-      <h1>Интернет-магазин «Техномарт»</h1>
+      <h1 class="visually-hidden">Интернет-магазин «Техномарт»</h1>
 
-      <ul class="breadcrumbs-list">
-        <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="index.html"></a>
-        </li>
-        <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link">Каталог</a>
-        </li>
-        <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="#">Инструмент</a>
-        </li>
-        <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="#">Перфораторы</a>
-        </li>
-      </ul>
+      <div class="popular-container">
+        <ul class="breadcrumbs-list">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link">Каталог</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="#">Инструмент</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="#">Перфораторы</a>
+          </li>
+        </ul>
+      </div>
 
-      <h1 class="title-catalog"><span>Перфораторы</span></h1>
+      <h1 class="title-catalog popular-container"><span>Перфораторы</span></h1>
 
       <section>
-        <h2>Фильтр:</h2>
+        <h2 >Фильтр:</h2>
         <p>Цена:<p>
          <!-- Здесь будет радиокнопки -->
         <h2>Производители:</h2>
@@ -257,25 +260,27 @@
       </section>
 
       <div class="catalog-text">
-        <h2 class="catalog-text-heading">Пара слов о перфораторах</h2>
-        <p class="catalog-text-content">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
-          Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
-          В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
-        </p>
+        <div class="popular-container">
+          <h2 class="catalog-text-heading">Пара слов о перфораторах</h2>
+          <p class="catalog-text-content">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+            Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
+            В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+          </p>
+        </div>
       </div>
     </main>
 
-    <footer class="page-footer">
-      <section class="footer-top">
+  <footer class="page-footer">
+    <section class="footer-top">
+      <div class="footer-top-container">
         <a class="main-logo">
-          <img src="img/logo.svg" width="106.83" height="16.9" alt="Логотип интернет-магазина «Техномарт»">
+          <img src="img/logo.svg" width="107" height="17" alt="Логотип интернет-магазина «Техномарт»">
         </a>
-        <h2>Контакты</h2>
+        <h2 class="visually-hidden">Контакты</h2>
         <div class="contact-footer">
           <a class="phone-footer" href="tel:+78125550555">+7 (812) 555-05-55</a>
           <p class="adress-footer">г. Санкт-Петербург, Б. Конюшенная, д. 19/8</p>
         </div>
-
         <nav class="footer-navigation">
           <ul class="footer-navigation-list">
             <li class="footer-navigation-item">
@@ -285,7 +290,7 @@
               <a class="footer-navigation-link" href="#">Новости</a>
             </li>
             <li class="footer-navigation-item">
-              <a class="footer-navigation-link">Каталог</a>
+              <a class="footer-navigation-link" href="catalog.html">Каталог</a>
             </li>
             <li class="footer-navigation-item">
               <a class="footer-navigation-link" href="#">Доставка</a>
@@ -297,28 +302,30 @@
         </nav>
         <ul class="footer-navigation-catalog-list">
           <li class="footer-navigation-catalog-item">
-            <a class="footer-navigation-catalog-link" href="#">Материалы</a>
+            <a class="footer-navigation-catalog-link" href="catalog.html">Материалы</a>
           </li>
           <li class="footer-navigation-catalog-item">
-            <a class="footer-navigation-catalog-link" href="#">Техника</a>
+            <a class="footer-navigation-catalog-link" href="catalog.html">Техника</a>
           </li>
           <li class="footer-navigation-catalog-item">
-            <a class="footer-navigation-catalog-link" href="#">Инстркмент</a>
+            <a class="footer-navigation-catalog-link" href="catalog.html">Инструмент</a>
           </li>
           <li class="footer-navigation-catalog-item">
-            <a class="footer-navigation-catalog-link" href="#">Спецпредложения</a>
+            <a class="footer-navigation-catalog-link" href="catalog.html">Спецпредложения</a>
           </li>
         </ul>
-      </section>
+      </div>
+    </section>
 
-      <section class="footer-bottom">
+    <section class="footer-bottom">
+      <div class="popular-container footer-bottom-container">
         <p class="footer-bottom-text">
-        © 2010–2019 Компания «Техномарт»<br>
-        Все права защищены
+          © 2010–2019 Компания «Техномарт»<br>
+          Все права защищены
         </p>
         <div class="footer-social">
-          <h2>Соц сети</h2>
-          <ul>
+          <h2 class="visually-hidden">Соц сети</h2>
+          <ul class="social-list">
             <li>
               <a class="social-button" href="#">Вконтакте</a>
             </li>
@@ -330,14 +337,17 @@
             </li>
           </ul>
         </div>
-        <div class="footer-copyright">
+        <div class="feedback">
           <p class="footer-copyright-text">Обратная связь:</p>
-            <a class="footer-copyright-link" href="https://mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          <p class="footer-copyright-text">Разработано:</p>
-            <a  class="footer-copyright-link" href="https://htmlacademy.ru">HTML Academy</a>
+          <a class="footer-copyright-link" href="https://mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </div>
-      </section>
-    </footer>
+        <div class="feedback">
+          <p class="footer-copyright-text">Разработано:</p>
+          <a  class="footer-copyright-link" href="https://htmlacademy.ru">HTML Academy</a>
+        </div>
+      </div>
+    </section>
+  </footer>
 
   </body>
 </html>
