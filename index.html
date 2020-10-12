@@ -17,10 +17,17 @@
           <a class="main-logo">
             <img src="img/logo.svg" width="107" height="17" alt="Логотип интернет-магазина «Техномарт»">
           </a>
-          <a class="search-header-top" href="#">Поиск</a>
+          <form class="search-header" method="get" action="https://echo.htmlacademy.ru">
+
+            <input id="search-header-input" name="search" type="text">
+            <svg class="search-header-image"width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white"/>
+            </svg>
+            <label class="search-header-top" for="search-header-input">Поиск:</label>
+          </form>
           <div class="header-top-navigation">
-            <a class="bookmarks-header-top" href="#">Закладки</a>
-            <a class="cart-header-top" href="#">Корзина</a>
+            <a class="bookmarks-header-top" href="#">Закладки: 0</a>
+            <a class="cart-header-top" href="#">Корзина: 0</a>
             <a class="order-header-top" href="#">Оформить заказ</a>
           </div>
         </div>
@@ -34,10 +41,14 @@
             <a class="phone-header" href="tel:+78125550555">+7 (812) 555-05-55</a>
             <p class="adress-header">г. Санкт-Петербург, Б. Конюшенная, д. 19/8</p>
           </div>
-          <div class="authorization-header">
-            <a class="authorization-input" href="#">Войти</a>
+          <div class="authorization">
+            <a class="authorization-login"href="#">Войти
+              <svg class="authorization-login-image" width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.875 8.5L6 0V6H0V11H6V17L14.875 8.5Z" fill="#C5C5C5"/>
+                <path d="M16.986 15.01H11.959V17H16.986C19.164 17 19.99 15.19 20.015 13.974V3.028C19.99 1.811 19.164 0 16.986 0H11.959V1.99H16.986C17.825 1.99 17.978 2.671 17.996 3.047V13.951C17.979 14.327 17.825 15.01 16.986 15.01Z" fill="#C5C5C5"/>
+              </svg>
+            </a>
             <a class="authorization-registration" href="#">Регистрация</a>
-            <!--будет форма входа-->
           </div>
         </div>
       </section>
@@ -81,22 +92,27 @@
         <div class="feature-item feature-materials">
           <span class="feature-name">Материалы</span>
           <a class="feature-link" href="catalog.html">на любой вкус</a>
+          <img class="feature-image" src="img/iconmaterial.svg" width="44" height="65">
         </div>
         <div class="feature-item feature-tool">
           <span class="feature-name">Инструмент</span>
           <a class="feature-link" href="catalog.html">на все случаи</a>
+          <img class="feature-image" src="img/icontool.svg" width="75" height="61">
         </div>
         <div class="feature-item feature-technics">
           <span class="feature-name">Техника</span>
           <a class="feature-link" href="catalog.html">Для стройки</a>
+          <img class="feature-image" src="img/icontechnics.svg" width="78" height="62">
         </div>
         <div class="feature-item feature-discount">
           <span class="feature-name">Скидка 50%</span>
           <a class="feature-link" href="catalog.html">на 350 товаров</a>
+          <img class="feature-image" src="img/icondiscount.svg" width="59" height="72">
         </div>
         <div class="feature-item feature-delivery">
           <span class="feature-name">Доставка</span>
           <a class="feature-link" href="#">Бесплатно</a>
+          <img class="feature-image" src="img/icondelivery.svg" width="78" height="63">
         </div>
         <div class="slider">
           <p class="title">Перфораторы</p>
@@ -110,7 +126,7 @@
       <section class="popular-container">
         <div class="popular">
           <h2 class="title">Популярные товары:</h2>
-          <a class="button button-popular"  href="catalog.html">Все популярные товары</a>
+          <a class="button"  href="catalog.html">Все популярные товары</a>
         </div>
         <ul class="card-list">
           <li class="card">
@@ -127,7 +143,7 @@
               <a class="card-hover-bookmarks" href="#">В закладки</a>
             </div>
           </li>
-          <li class="card">
+          <li class="card card-new">
             <a class="card-title" href="#">Перфоратор BOSCH BFG 3000</a>
             <div>
               <img class="card-pic" src="img/3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
@@ -155,7 +171,7 @@
               <a class="card-hover-bookmarks" href="#">В закладки</a>
             </div>
           </li>
-          <li class="card">
+          <li class="card card-new">
             <a class="card-title" href="#">Перфоратор BOSCH BFG 2000</a>
             <div>
               <img class="card-pic" src="img/2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
@@ -174,7 +190,7 @@
       <section class="popular-container">
         <div class="popular">
           <h2 class="title">Популярные производители:</h2>
-          <a class="button button-popular" href="catalog.html">Все производители</a>
+          <a class="button" href="catalog.html">Все производители</a>
         </div>
         <ul class="manufacturers-list">
           <li>
@@ -224,22 +240,24 @@
         <div class="popular-container">
           <h2 class="service-title">Сервисы</h2>
           <p class="service-text">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всез сил, чтобы сделать ваши покупки приятными.</p>
-          <div>
-            <ul class="service-list">
-              <li class="service-item">
-                <a class="service-delivery servis-link" href="#">Доставка</a>
-              </li>
-              <li class="service-item">
-                <a class="service-guarantee servis-link" href="#">Гарантия</a>
-              </li>
-              <li class="service-item">
-                <a class="service-credit servis-link" href="#">Кредит</a>
-              </li>
-            </ul>
-          </div>
-          <div class="service-slider">
-            <h3 class="title">Доставка</h3>
-            <p class="service-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+          <div class="service-container">
+            <div class="service-list-container">
+              <ul class="service-list">
+                <li class="service-item service-item-current">
+                  <a>Доставка</a>
+                </li>
+                <li class="service-item">
+                  <a href="#">Гарантия</a>
+                </li>
+                <li class="service-item">
+                  <a href="#">Кредит</a>
+                </li>
+              </ul>
+            </div>
+            <div class="service-slider">
+              <h3 class="title">Доставка</h3>
+              <p class="service-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+            </div>
           </div>
         </div>
       </section>
@@ -254,7 +272,7 @@
             <li class="carrier-item">Автотрейдинг</li>
             <li class="carrier-item">ЖелДорЭкспедиция</li>
           </ul>
-          <a class="button button-details" href="#">Подробнее о компании</a>
+          <a class="button" href="#">Подробнее о компании</a>
         </div>
 
         <div class="pickup">
@@ -263,7 +281,7 @@
           <a>
             <img src="img/map.png" width="300" height="158" alt="Пункт самовывоза находится по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19">
           </a>
-          <a class="button button-write" href="#">Заблудились? Напишите нам!</a>
+          <a class="button" href="#">Заблудились? Напишите нам!</a>
         </div>
       </section>
     </main>
@@ -354,7 +372,7 @@
           </div>
           <div class="feedback">
             <p class="footer-copyright-text">Разработано:</p>
-            <a  class="footer-copyright-link" href="https://htmlacademy.ru">HTML Academy</a>
+            <a  class="footer-copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
           </div>
         </div>
       </section>
