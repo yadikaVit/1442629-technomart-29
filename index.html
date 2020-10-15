@@ -20,10 +20,10 @@
           <form class="search-header" method="get" action="https://echo.htmlacademy.ru">
 
             <input id="search-header-input" name="search" type="text">
+            <label class="search-header-top" for="search-header-input">Поиск:</label>
             <svg class="search-header-image"width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white"/>
             </svg>
-            <label class="search-header-top" for="search-header-input">Поиск:</label>
           </form>
           <div class="header-top-navigation">
             <a class="bookmarks-header-top" href="#">Закладки: 0</a>
@@ -115,11 +115,11 @@
           <img class="feature-image" src="img/icondelivery.svg" width="78" height="63">
         </div>
         <div class="slider">
-          <p class="title">Перфораторы</p>
-          <p>Настоящие мужские игрушки</p>
+          <p class="slider-title">Перфораторы</p>
+          <p class="slider-text">Настоящие мужские игрушки</p>
           <button class="button-control button-control-back" type="button"></button>
           <button class="button-control button-control-next" type="button"></button>
-          <a class="button" href="catalog.html">Открыть каталог</a>
+          <a class="button slider-button" href="catalog.html">Открыть каталог</a>
         </div>
       </section>
 
@@ -241,22 +241,21 @@
           <h2 class="service-title">Сервисы</h2>
           <p class="service-text">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всез сил, чтобы сделать ваши покупки приятными.</p>
           <div class="service-container">
-            <div class="service-list-container">
-              <ul class="service-list">
-                <li class="service-item service-item-current">
-                  <a>Доставка</a>
-                </li>
-                <li class="service-item">
-                  <a href="#">Гарантия</a>
-                </li>
-                <li class="service-item">
-                  <a href="#">Кредит</a>
-                </li>
-              </ul>
-            </div>
+            <ul class="service-list">
+              <li class="service-item service-item-current">
+                <a>Доставка</a>
+              </li>
+              <li class="service-item">
+                <a href="#">Гарантия</a>
+              </li>
+              <li class="service-item">
+                <a href="#">Кредит</a>
+              </li>
+            </ul>
             <div class="service-slider">
-              <h3 class="title">Доставка</h3>
+              <h3 class="title title-delivery">Доставка</h3>
               <p class="service-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+              <img class="service-image" src="img/car.png" width="468" height="261">
             </div>
           </div>
         </div>
@@ -279,9 +278,9 @@
           <h2 class="service-title">Контакты</h2>
           <p class="service-text">Вы можете забрать товар сами, заехав в наш офис:</p>
           <a>
-            <img src="img/map.png" width="300" height="158" alt="Пункт самовывоза находится по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19">
+            <img class="maps" src="img/map.png" width="300" height="158" alt="Пункт самовывоза находится по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19">
           </a>
-          <a class="button" href="#">Заблудились? Напишите нам!</a>
+          <a class="button button-maps" href="#">Заблудились? Напишите нам!</a>
         </div>
       </section>
     </main>
