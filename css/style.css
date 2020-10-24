@@ -728,7 +728,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   position: relative;
   margin: 0;
   padding: 0;
@@ -739,14 +738,8 @@ body {
 }
 
 .card:hover {
-  background-color: var(--white-basic);
-  border: 1px solid var(--gray-border);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
-}
-
-.card:hover img {
-  display: none;
 }
 
 .card-pic {
@@ -757,10 +750,6 @@ body {
 
 .card-hover {
   display: none;
-  min-height: 164px;
-  margin: auto;
-  align-content: center;
-  box-sizing: border-box;
 }
 
 .card-hover a {
@@ -775,33 +764,39 @@ body {
 }
 
 .card:hover .card-hover {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-top: 38px;
+  background-color: var(--white-basic);
+  box-sizing: border-box;
 }
 
 .card-title {
-  display: block;
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   padding: 0 25px;
-  margin: 10px 0;
   text-align: center;
   color: var(--black-basic);
-  order: 1;
   box-sizing: border-box;
 }
 
 .card-pic-container {
   min-height: 164px;
   margin: auto;
+  margin-top: 22px;
   align-content: center;
   box-sizing: border-box;
 }
 
 .card-block-price {
-  display: block;
-  order: 2;
   box-sizing: border-box;
  }
 
@@ -1475,6 +1470,11 @@ body {
   box-sizing: border-box;
 }
 
+.price-controls, .checkbox-list {
+  border-bottom: 1px solid var(--gray-border);
+  padding-bottom: 25px;
+}
+
 .filter fieldset:first-child {
   margin-bottom: 35px;
 }
@@ -1529,6 +1529,12 @@ body {
   fill: var(--gray-radio-hover)
 }
 
+.filter-checkbox:disabled .checkbox-off path,
+.filter-checkbox:disabled .checkbox-on path {
+  fill: rgba(181, 181, 181, 0.3);
+}
+
+
 .checkbox-off {
   content: "";
   position: absolute;
@@ -1553,7 +1559,7 @@ body {
   box-sizing: border-box;
 }
 
-.radio-label::before {
+.filter-input-radio + label::before {
   content: "";
   position: absolute;
   left: -42px;
@@ -1564,7 +1570,7 @@ body {
   border-radius: 50%;
 }
 
-.radio-label-checked::after {
+.filter-input-radio:checked + label::after {
   content: "";
   position: absolute;
   top: 5px;
@@ -1578,8 +1584,17 @@ body {
 .radio-label-checked:hover:after {
   background-color: var(--gray-radio-hover);
 }
+
 .radio-label:hover:before {
   border-color: var(--gray-radio-hover);
+}
+
+.radio-label-checked:disabled:after {
+  background-color: rgba(181, 181, 181, 0.3);
+}
+
+.radio-label:disabled:before {
+  border-color: rgba(181, 181, 181, 0.3);
 }
 
 .filter-button {
@@ -1645,17 +1660,21 @@ body {
   border-bottom: 2px solid var(--red-basic);
 }
 
-.sorting-link:active {
+.sorting-link:active, .sorting-current {
   opacity: 1;
   color: var(--red-basic);
   border-bottom: none;
+}
+
+.sorting-icon-down {
+  margin-left: 21px;
 }
 
 .sorting-icon:hover path {
   fill: var(--black-basic);
 }
 
-.sorting-icon:active path {
+.sorting-icon:active path, .sorting-icon-current path {
   fill: var(--red-basic);
 }
 
@@ -1773,6 +1792,7 @@ body {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   text-align: center;
+  text-transform: uppercase;
   display: block;
   padding: 10px 15px;
   color: var(--black-basic);

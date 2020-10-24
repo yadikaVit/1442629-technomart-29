@@ -139,8 +139,10 @@
                   </label>
                 </div>
               </div>
+            </fieldset>
+            <fieldset>
               <legend class="filter-legend">Производители:</legend>
-              <ul>
+              <ul class="checkbox-list">
                 <li class="filter-option filter-checkbox">
                   <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="Bosh" id="filter-Bosh" checked>
                   <label for="filter-Bosh">Bosh</label>
@@ -170,7 +172,6 @@
                   <svg class="checkbox-off" width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M3.16235 0H20.1624C21.8124 0 23.1624 1.35 23.1624 3V20C23.1624 21.65 21.8124 23 20.1624 23H3.16235C1.51235 23 0.162354 21.65 0.162354 20V3C0.162354 1.35 1.51235 0 3.16235 0ZM21.1624 3C21.1624 2.458 20.7044 2 20.1624 2H3.16235C2.62035 2 2.16235 2.458 2.16235 3V20C2.16235 20.542 2.62035 21 3.16235 21H20.1624C20.7044 21 21.1624 20.542 21.1624 20V3Z" fill="#C5C5C5"/>
                   </svg>
-
                 </li>
                 <li class="filter-option filter-checkbox">
                   <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="Hitachi" id="filter-Hitachi">
@@ -203,7 +204,7 @@
             <h2 class="sorting-title">Сортировка:</h2>
             <ul class="sorting-list">
               <li class="sorting-item">
-                <a class="sorting-link" href="#">По цене</a>
+                <a class="sorting-link sorting-current" href="#">По цене</a>
               </li>
               <li class="sorting-item">
                 <a class="sorting-link" href="#">По типу</a>
@@ -212,14 +213,12 @@
                 <a class="sorting-link" href="#">По функционалу</a>
               </li>
               <li>
-                <a class="sorting-icon" href="#">
+                <a class="sorting-icon sorting-icon-current" href="#">
                   <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5.66235 0L11.1624 10L0.162354 10" fill="#C5C5C5"/>
                   </svg>
                 </a>
-              </li>
-              <li>
-                <a class="sorting-icon" href="#">
+                <a class="sorting-icon sorting-icon-down" href="#">
                   <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5.66235 10L0.162354 0H11.1624" fill="#C5C5C5"/>
                   </svg>
@@ -230,10 +229,10 @@
           <h2 class="visually-hidden">Список Перфораторов</h2>
           <ul class="card-list-catalog">
             <li class="card">
-              <a class="card-title" href="#">Перфоратор BOSCH BFG 6000</a>
               <div class="card-pic-container">
                 <img class="card-pic" src="img/6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
               </div>
+              <a class="card-title" href="#">Перфоратор BOSCH BFG 6000</a>
               <div class="card-block-price">
                 <p class="old-price"><s>30500 Р.</s></p>
                 <p class="card-price">25500 Р.</p>
@@ -244,10 +243,10 @@
               </div>
             </li>
             <li class="card">
-              <a class="card-title" href="#">Перфоратор BOSCH BFG 6000</a>
               <div class="card-pic-container">
                 <img class="card-pic" src="img/6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
               </div>
+              <a class="card-title" href="#">Перфоратор BOSCH BFG 6000</a>
               <div class="card-block-price">
                 <p class="old-price"><s>30500 Р.</s></p>
                 <p class="card-price">25500 Р.</p>
@@ -257,11 +256,11 @@
                 <a class="card-hover-bookmarks" href="#">В закладки</a>
               </div>
             </li>
-            <li class="card">
-              <a class="card-title" href="#">Перфоратор BOSCH BFG 6000</a>
+            <li class="card card-new">
               <div class="card-pic-container">
                 <img class="card-pic" src="img/6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
               </div>
+              <a class="card-title" href="#">Перфоратор BOSCH BFG 6000</a>
               <div class="card-block-price">
                 <p class="old-price"><s>30500 Р.</s></p>
                 <p class="card-price">25500 Р.</p>
@@ -271,11 +270,11 @@
                 <a class="card-hover-bookmarks" href="#">В закладки</a>
               </div>
             </li>
-            <li class="card">
-              <a class="card-title" href="#">Перфоратор BOSCH BFG 3000</a>
+            <li class="card card-new">
               <div class="card-pic-container">
                 <img class="card-pic" src="img/3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
               </div>
+              <a class="card-title" href="#">Перфоратор BOSCH BFG 3000</a>
               <div class="card-block-price">
                 <p class="old-price"><s>22500 Р.</s></p>
                 <p class="card-price">15500 Р.</p>
@@ -286,10 +285,10 @@
               </div>
             </li>
             <li class="card">
-              <a class="card-title" href="#">Перфоратор BOSCH BFG 6000</a>
               <div class="card-pic-container">
                 <img class="card-pic" src="img/6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
               </div>
+              <a class="card-title" href="#">Перфоратор BOSCH BFG 6000</a>
               <div class="card-block-price">
                 <p class="old-price"><s>30500 Р.</s></p>
                 <p class="card-price">25500 Р.</p>
@@ -299,11 +298,11 @@
                 <a class="card-hover-bookmarks" href="#">В закладки</a>
               </div>
             </li>
-            <li class="card">
-              <a class="card-title" href="#">Перфоратор BOSCH BFG 2000</a>
+            <li class="card card-new">
               <div class="card-pic-container">
                 <img class="card-pic" src="img/2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
               </div>
+              <a class="card-title" href="#">Перфоратор BOSCH BFG 2000</a>
               <div class="card-block-price">
                 <p class="card-price">12500 Р.</p>
               </div>
@@ -312,11 +311,11 @@
                 <a class="card-hover-bookmarks" href="#">В закладки</a>
               </div>
             </li>
-            <li class="card">
-              <a class="card-title" href="#">Перфоратор BOSCH BFG 3000</a>
+            <li class="card card-new">
               <div class="card-pic-container">
                 <img class="card-pic" src="img/3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
               </div>
+              <a class="card-title" href="#">Перфоратор BOSCH BFG 3000</a>
               <div class="card-block-price">
                 <p class="old-price"><s>22500 Р.</s></p>
                 <p class="card-price">15500 Р.</p>
@@ -327,10 +326,10 @@
               </div>
             </li>
             <li class="card">
-              <a class="card-title" href="#">Перфоратор BOSCH BFG 6000</a>
               <div class="card-pic-container">
                 <img class="card-pic" src="img/6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
               </div>
+              <a class="card-title" href="#">Перфоратор BOSCH BFG 6000</a>
               <div class="card-block-price">
                 <p class="old-price"><s>30500 Р.</s></p>
                 <p class="card-price">25500 Р.</p>
@@ -340,11 +339,11 @@
                 <a class="card-hover-bookmarks" href="#">В закладки</a>
               </div>
             </li>
-            <li class="card">
-              <a class="card-title" href="#">Перфоратор BOSCH BFG 2000</a>
+            <li class="card card-new">
               <div class="card-pic-container">
                 <img class="card-pic" src="img/2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
               </div>
+              <a class="card-title" href="#">Перфоратор BOSCH BFG 2000</a>
               <div class="card-block-price">
                 <p class="card-price">12500 Р.</p>
               </div>
