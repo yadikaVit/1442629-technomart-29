@@ -38,7 +38,7 @@
           <i class="header-text">Интеренет-магазин строительных материалов и&nbsp;интрументов для ремонта</i>
           <div class="contact-header">
             <a class="phone-header" href="tel:+78125550555">+7 (812) 555-05-55</a>
-            <p class="adress-header">г. Санкт-Петербург, Б. Конюшенная, д. 19/8</p>
+            <p class="adress-header">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </div>
           <div class="authorization">
             <a class="authorization-login" href="#">Войти
@@ -91,27 +91,27 @@
         <div class="feature-item feature-materials">
           <span class="feature-name">Материалы</span>
           <a class="feature-link" href="catalog.html">на любой вкус</a>
-          <img class="feature-image" src="img/iconmaterial.svg" width="44" height="65" alt="Ведерко с краской">
+          <img class="feature-image-materials" src="img/iconmaterial.svg" width="44" height="65" alt="Ведерко с краской">
         </div>
         <div class="feature-item feature-tool">
           <span class="feature-name">Инструмент</span>
           <a class="feature-link" href="catalog.html">на все случаи</a>
-          <img class="feature-image" src="img/icontool.svg" width="75" height="61" alt="Дрель">
+          <img class="feature-image-tool" src="img/icontool.svg" width="75" height="61" alt="Дрель">
         </div>
         <div class="feature-item feature-technics">
           <span class="feature-name">Техника</span>
           <a class="feature-link" href="catalog.html">Для стройки</a>
-          <img class="feature-image" src="img/icontechnics.svg" width="78" height="62" alt="Трактор">
+          <img class="feature-image-technics" src="img/icontechnics.svg" width="78" height="62" alt="Трактор">
         </div>
         <div class="feature-item feature-discount">
           <span class="feature-name">Скидка 50%</span>
           <a class="feature-link" href="catalog.html">на 350 товаров</a>
-          <img class="feature-image" src="img/icondiscount.svg" width="59" height="72" alt="Продуктовая тележка">
+          <img class="feature-image-discount" src="img/icondiscount.svg" width="59" height="72" alt="Продуктовая тележка">
         </div>
         <div class="feature-item feature-delivery">
           <span class="feature-name">Доставка</span>
           <a class="feature-link" href="#">Бесплатно</a>
-          <img class="feature-image" src="img/icondelivery.svg" width="78" height="63" alt="Машинка">
+          <img class="feature-image-delivery" src="img/icondelivery.svg" width="78" height="63" alt="Машинка">
         </div>
         <div class="slider slider-wrapper-1">
           <ul class="slider-list">
@@ -133,7 +133,7 @@
       <section class="popular-container">
         <div class="popular">
           <h2 class="title">Популярные товары:</h2>
-          <a class="button"  href="catalog.html">Все популярные товары</a>
+          <a class="button" href="catalog.html">Все популярные товары</a>
         </div>
         <ul class="card-list">
           <li class="card">
@@ -184,6 +184,7 @@
             </div>
             <a class="card-title" href="#">Перфоратор BOSCH BFG 2000</a>
             <div class="card-block-price">
+              <p class="old-price"><s>22500 Р.</s></p>
               <p class="card-price">12500 Р.</p>
             </div>
             <div class="card-hover">
@@ -260,34 +261,51 @@
               </li>
             </ul>
             <div class="service-slider">
-              <h3 class="title title-delivery">Доставка</h3>
-              <p class="service-text service-text-delivery">Мы с удовольствием доставим ваш товар прямо к&nbsp;вашему подъезду совершенно бесплатно!
-                <br>Ведь мы неплохо заработаем,
-                <br>поднимая его на ваш этаж!
-              </p>
+              <ul class="service-slider-list">
+                <li class="service-slider-item service-slide">
+                  <h3 class="title title-delivery">Доставка</h3>
+                  <p class="service-text service-text-delivery">Мы с удовольствием доставим ваш товар прямо к&nbsp;вашему подъезду совершенно бесплатно!
+                  <br>Ведь мы неплохо заработаем,
+                  <br>поднимая его на ваш этаж!
+                  </p>
+                  <img class="service-image " src="img/car.png" width="468" height="261" alt="">
+                </li>
+                <li class="service-slider-item service-slide service-slide-current">
+                  <h3 class="title title-delivery">Гарантия</h3>
+                  <p class="service-text service-text-delivery">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
+                  <img class="service-image" src="img/guarantee.png" width="389" height="283" alt="">
+                </li>
+                <li class="service-slider-item service-slide">
+                  <h3 class="title title-delivery">Кредит</h3>
+                  <p class="service-text service-text-delivery">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+                  <a class="button" href="#">Отправить заявку</a>
+                  <img class="service-image" src="img/credit.png" width="465" height="285" alt="">
+                </li>
+              </ul>
             </div>
-            <img class="service-image" src="img/car.png" width="468" height="261" alt="Грузовая машина">
           </div>
         </div>
       </section>
 
-      <section class="transport popular-container">
+      <section class="popular-container transport">
         <div class="transport-service">
-          <h2 class="service-title">Компания «Техномарт»</h2>
-          <p class="service-text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-          <p class="service-text">Мы можем доставить ваш товар в самые отдаленные точки России!
+          <h2 class="transport-title">Компания «Техномарт»</h2>
+          <p class="service-text transport-text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+          <p class="service-text transport-text">Мы можем доставить ваш товар в самые отдаленные точки России!
             <br>Техномарт работает со многими транспортными компаниями:</p>
           <ul class="carrier-list">
             <li class="carrier-item">Деловые линии</li>
             <li class="carrier-item">Автотрейдинг</li>
             <li class="carrier-item">ЖелДорЭкспедиция</li>
           </ul>
-          <a class="button" href="#">Подробнее о компании</a>
+          <a class="button transport-button" href="#">Подробнее о компании</a>
         </div>
 
         <div class="pickup">
-          <h2 class="service-title">Контакты</h2>
-          <p class="service-text">Вы можете забрать товар сами, заехав в наш офис:</p>
+          <h2 class="transport-title">Контакты</h2>
+          <p class="transport-text">Вы можете забрать товар сами,
+            <br>заехав в наш офис:
+          </p>
           <a>
             <img class="maps" src="img/map.png" width="300" height="158" alt="Пункт самовывоза находится по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19">
           </a>
@@ -300,12 +318,12 @@
       <section class="footer-top">
         <div class="footer-top-container">
           <div class="footer-contact-container">
-            <a class="main-logo">
-              <img src="img/logo.svg" width="107" height="17" alt="Логотип интернет-магазина «Техномарт»">
+            <a class="main-logo logo-footer">
+              <img src="img/logo-footer.svg" width="138" height="23" alt="Логотип интернет-магазина «Техномарт»">
             </a>
             <h2 class="visually-hidden">Контакты</h2>
             <div class="contact-footer">
-              <p class="adress-footer">г. Санкт-Петербург, Б. Конюшенная, д. 19/8</p>
+              <p class="adress-footer">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
               <a class="phone-footer" href="tel:+78125550555">+7 (812) 555-05-55</a>
             </div>
           </div>
