@@ -1872,6 +1872,7 @@ body {
 /* Modal */
 
 .modal {
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
@@ -1882,6 +1883,14 @@ body {
   border-top: 7px solid var(--red-basic);
 }
 
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
 
 /* Modal login */
 
@@ -1947,6 +1956,7 @@ body {
   width: 460px;
   min-height: 114px ;
   padding-top: 7px;
+  margin-bottom: 37px;
 }
 
 
@@ -1965,9 +1975,9 @@ body {
 .modal-close::after {
   content: "";
   position: absolute;
-  top: 10px;
+  top: 8px;
   left: 5px;
-  width: 23px;
+  width: 25px;
   height: 4px;
   background-color: var(--red-basic);
 }
@@ -1983,8 +1993,9 @@ body {
 .button-modal-container {
   background-color: #F4F4F4;
   height: 112px;
-  padding-top: 37px;
-  margin-top: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .login-form .button {
@@ -1997,7 +2008,6 @@ body {
 /* Modal map */
 
 .modal-map {
-  display: none;
   width: 943px;
   height: 449px;
   background: #565656;
@@ -2019,4 +2029,90 @@ body {
   width: 620px;
   height: 283px;
   filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+}
+
+.modal-cart h2 {
+  position: relative;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--black-basic);
+  padding: 0;
+  margin: 0;
+  margin-top: 66px;
+  margin-bottom: 68px;
+}
+
+.modal-cart h2::before {
+  content: "";
+  position: absolute;
+  top: -18px;
+  left: 80px;
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  background-color: var(--green-basic);
+}
+
+.modal-cart h2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 95px;
+  width: 35px;
+  height: 20px;
+  border-bottom: 7px solid var(--white-basic);
+  border-left: 7px solid var(--white-basic);
+  transform: rotate(-45deg);
+}
+
+.button-modal-next {
+  background-color: var(--white-basic);
+  color: var(--black-basic);
+  margin-left: 10px;
+}
+
+/* Animations */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
