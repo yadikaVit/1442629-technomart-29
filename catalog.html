@@ -25,7 +25,7 @@
           </form>
           <div class="header-top-navigation">
             <a class="bookmarks-header-top" href="#">Закладки: 0</a>
-            <a class="cart-header-top" href="#">Корзина: 0</a>
+            <a class="cart-header-top cart-header-top-catalog" href="#">Корзина: 10</a>
             <a class="order-header-top" href="#">Оформить заказ</a>
           </div>
         </div>
@@ -141,11 +141,11 @@
               </div>
             </fieldset>
             <fieldset>
-              <legend class="filter-legend">Производители:</legend>
+              <legend class="filter-legend filter-legend-manufactures">Производители:</legend>
               <ul class="checkbox-list">
                 <li class="filter-option filter-checkbox">
                   <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="Bosh" id="filter-Bosh" checked>
-                  <label for="filter-Bosh">Bosh</label>
+                  <label for="filter-Bosh">Bosch</label>
                 </li>
                 <li class="filter-option filter-checkbox">
                   <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="interscol" id="filter-interscol">
@@ -166,7 +166,7 @@
               </ul>
             </fieldset>
             <fieldset>
-              <legend class="filter-legend">Питание:</legend>
+              <legend class="filter-legend filter-legend-electric">Питание:</legend>
               <ul>
                 <li class="filter-option filter-radio">
                   <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-group" value="battery" id="filter-battery" checked>
@@ -239,7 +239,7 @@
                 <a class="card-hover-bookmarks" href="#">В закладки</a>
               </div>
             </li>
-            <li class="card card-new">
+            <li class="card card-new card-current">
               <div class="card-pic-container">
                 <img class="card-pic" src="img/6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
               </div>
@@ -355,97 +355,108 @@
       </div>
     </main>
 
-  <footer class="page-footer">
-    <section class="footer-top">
-      <div class="footer-top-container">
-        <div class="footer-contact-container">
-          <a class="main-logo">
-            <img src="img/logo.svg" width="107" height="17" alt="Логотип интернет-магазина «Техномарт»">
-          </a>
-          <h2 class="visually-hidden">Контакты</h2>
-          <div class="contact-footer">
-            <p class="adress-footer">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-            <a class="phone-footer" href="tel:+78125550555">+7 (812) 555-05-55</a>
+    <footer class="page-footer">
+      <section class="footer-top">
+        <div class="footer-top-container">
+          <div class="footer-contact-container">
+            <a class="main-logo logo-footer" href="index.html">
+              <img src="img/logo-footer.svg" width="138" height="23" alt="Логотип интернет-магазина «Техномарт»">
+            </a>
+            <h2 class="visually-hidden">Контакты</h2>
+            <div class="contact-footer">
+              <p class="adress-footer">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+              <a class="phone-footer" href="tel:+78125550555">+7 (812) 555-05-55</a>
+            </div>
           </div>
-        </div>
-        <div class="footer-navigation-container">
-          <nav class="footer-navigation">
-            <ul class="footer-navigation-list">
-              <li class="footer-navigation-item">
-                <a class="footer-navigation-link" href="#">Компания</a>
+          <div class="footer-navigation-container">
+            <nav class="footer-navigation">
+              <ul class="footer-navigation-list">
+                <li class="footer-navigation-item">
+                  <a class="footer-navigation-link" href="#">Компания</a>
+                </li>
+                <li class="footer-navigation-item">
+                  <a class="footer-navigation-link" href="#">Новости</a>
+                </li>
+                <li class="footer-navigation-item">
+                  <a class="footer-navigation-link" href="catalog.html">Каталог</a>
+                </li>
+                <li class="footer-navigation-item">
+                  <a class="footer-navigation-link" href="#">Доставка</a>
+                </li>
+                <li class="footer-navigation-item">
+                  <a class="footer-navigation-link" href="#">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="footer-navigation-catalog-list">
+              <li class="footer-navigation-catalog-item">
+                <a class="footer-navigation-catalog-link" href="catalog.html">Материалы</a>
               </li>
-              <li class="footer-navigation-item">
-                <a class="footer-navigation-link" href="#">Новости</a>
+              <li class="footer-navigation-catalog-item">
+                <a class="footer-navigation-catalog-link" href="catalog.html">Техника</a>
               </li>
-              <li class="footer-navigation-item">
-                <a class="footer-navigation-link" href="#">Каталог</a>
+              <li class="footer-navigation-catalog-item">
+                <a class="footer-navigation-catalog-link" href="catalog.html">Инструмент</a>
               </li>
-              <li class="footer-navigation-item">
-                <a class="footer-navigation-link" href="#">Доставка</a>
-              </li>
-              <li class="footer-navigation-item">
-                <a class="footer-navigation-link" href="#">Контакты</a>
+              <li class="footer-navigation-catalog-item">
+                <a class="footer-navigation-catalog-link" href="catalog.html">Спецпредложения</a>
               </li>
             </ul>
-          </nav>
-          <ul class="footer-navigation-catalog-list">
-            <li class="footer-navigation-catalog-item">
-              <a class="footer-navigation-catalog-link" href="#">Материалы</a>
-            </li>
-            <li class="footer-navigation-catalog-item">
-              <a class="footer-navigation-catalog-link" href="#">Техника</a>
-            </li>
-            <li class="footer-navigation-catalog-item">
-              <a class="footer-navigation-catalog-link" href="#">Инструмент</a>
-            </li>
-            <li class="footer-navigation-catalog-item">
-              <a class="footer-navigation-catalog-link" href="#">Спецпредложения</a>
-            </li>
-          </ul>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="footer-bottom">
-      <div class="popular-container footer-bottom-container">
-        <p class="footer-bottom-text">
-          © 2010–2019 Компания «Техномарт»<br>
-          Все права защищены
-        </p>
-        <div class="footer-social">
-          <h2 class="visually-hidden">Соц сети</h2>
-          <ul class="social-list">
-            <li>
-              <a class="social-button" href="#">
-                <span class="visually-hidden">Вконтакте</span>
-                <img src="img/icon-vk.svg">
-              </a>
-            </li>
-            <li>
-              <a class="social-button" href="#">
-                <span class="visually-hidden">Фейсбук</span>
-                <img src="img/icon-fb.svg">
-              </a>
-            </li>
-            <li>
-              <a class="social-button" href="#">
-                <span class="visually-hidden">Инстаграм</span>
-                <img src="img/icon-insta.svg">
-              </a>
-            </li>
-          </ul>
+      <section class="footer-bottom">
+        <div class="popular-container footer-bottom-container">
+          <p class="footer-bottom-text">
+            © 2010–2019 Компания «Техномарт»<br>
+            Все права защищены
+          </p>
+          <div class="footer-social">
+            <h2 class="visually-hidden">Соц сети</h2>
+            <ul class="social-list">
+              <li>
+                <a class="social-button" href="#">
+                  <span class="visually-hidden">Вконтакте</span>
+                  <img src="img/icon-vk.svg" width="27" height="16" alt="Вконтакте">
+                </a>
+              </li>
+              <li>
+                <a class="social-button" href="#">
+                  <span class="visually-hidden">Фейсбук</span>
+                  <img src="img/icon-fb.svg" width="12" height="22" alt="Фейсбук">
+                </a>
+              </li>
+              <li>
+                <a class="social-button" href="#">
+                  <span class="visually-hidden">Инстаграм</span>
+                  <img src="img/icon-insta.svg" width="21" height="21" alt="Инстаграм">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="feedback-container">
+            <div class="feedback">
+              <p class="footer-copyright-text">Обратная связь:</p>
+              <a class="footer-copyright-link" href="https://mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </div>
+            <div class="feedback">
+              <p class="footer-copyright-text">Разработано -</p>
+              <a  class="footer-copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+            </div>
+          </div>
         </div>
-        <div class="feedback">
-          <p class="footer-copyright-text">Обратная связь:</p>
-          <a class="footer-copyright-link" href="https://mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </div>
-        <div class="feedback">
-          <p class="footer-copyright-text">Разработано:</p>
-          <a  class="footer-copyright-link" href="https://htmlacademy.ru">HTML Academy</a>
-        </div>
-      </div>
-    </section>
-  </footer>
+      </section>
+    </footer>
 
+    <section class="modal modal-cart">
+      <h2>Товар добавлен в корзину!</h2>
+      <div class="button-modal-container">
+        <button class="button" type="button">Оформить заказ</button>
+        <button class="button" type="button">Продолжить покупки</button>
+      </div>
+      </form>
+      <button class="modal-close" type="button" aria-label="Закрыть"></button>
+    </section>
   </body>
 </html>

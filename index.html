@@ -270,16 +270,16 @@
                   </p>
                   <img class="service-image " src="img/car.png" width="468" height="261" alt="">
                 </li>
-                <li class="service-slider-item service-slide service-slide-current">
-                  <h3 class="title title-delivery">Гарантия</h3>
-                  <p class="service-text service-text-delivery">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
-                  <img class="service-image" src="img/guarantee.png" width="389" height="283" alt="">
-                </li>
                 <li class="service-slider-item service-slide">
+                  <h3 class="title title-delivery">Гарантия</h3>
+                  <p class="service-text service-text-guarantee">Если купленный у нас товар поломается или заискрит, а&nbsp;также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом&nbsp;уж восстановите как-нибудь сами.</p>
+                  <img class="service-image service-image-guarantee" src="img/guarantee.png" width="389" height="283" alt="">
+                </li>
+                <li class="service-slider-item service-slide service-slide-current">
                   <h3 class="title title-delivery">Кредит</h3>
-                  <p class="service-text service-text-delivery">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+                  <p class="service-text service-text-credit">Залезть в долговую яму стало проще! Кредитные&nbsp;консультанты придут вам на помощь.</p>
                   <a class="button" href="#">Отправить заявку</a>
-                  <img class="service-image" src="img/credit.png" width="465" height="285" alt="">
+                  <img class="service-image service-image-credit" src="img/credit.png" width="465" height="285" alt="">
                 </li>
               </ul>
             </div>
@@ -394,17 +394,51 @@
               </li>
             </ul>
           </div>
-          <div class="feedback">
-            <p class="footer-copyright-text">Обратная связь:</p>
-            <a class="footer-copyright-link" href="https://mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </div>
-          <div class="feedback">
-            <p class="footer-copyright-text">Разработано:</p>
-            <a  class="footer-copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+          <div class="feedback-container">
+            <div class="feedback">
+              <p class="footer-copyright-text">Обратная связь:</p>
+              <a class="footer-copyright-link" href="https://mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </div>
+            <div class="feedback">
+              <p class="footer-copyright-text">Разработано -</p>
+              <a  class="footer-copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+            </div>
           </div>
         </div>
       </section>
     </footer>
+
+    <section class="modal modal-login">
+      <h2 class="visually-hidden">Oбратная связь</h2>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="modal-container">
+          <div class="feedback-wrapper">
+            <p class="modal-name">
+              <label class="modal-description" for="login-login">Ваше имя:</label>
+              <input class="login-icon-user" id="login-login" type="text" name="login" placeholder="Имя Фамилия">
+            </p>
+            <p class="modal-name">
+              <label class="modal-description" for="login-email">Ваш e-mail:</label>
+              <input class="login-icon-user" id="login-email" type="email" name="email" placeholder="email@example.com">
+            </p>
+          </div>
+          <p>
+            <label class="modal-description" for="text-feedback">Текст письма:</label>
+            <textarea class="login-icon-user" id="text-feedback"  name="feedback" placeholder="В свободной форме"></textarea>
+          </p>
+        </div>
+        <div class="button-modal-container">
+          <button class="button" type="submit">Отправить</button>
+        </div>
+      </form>
+      <button class="modal-close" type="button" aria-label="Закрыть"></button>
+    </section>
+
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="943" height="449" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
+      <button class="modal-close" type="button" aria-label="Закрыть"></button>
+    </section>
 
   </body>
 </html>
