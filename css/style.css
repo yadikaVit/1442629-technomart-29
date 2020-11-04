@@ -325,7 +325,6 @@ body {
 }
 .header-middle-container {
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
   width: 940px;
   margin: auto;
@@ -336,7 +335,7 @@ body {
 
 .header-text {
   margin-left: 30px;
-  margin-right: 25px;
+  margin-right: 87px;
   font-size: 16px;
   line-height: 23px;
   max-width: 200px;
@@ -385,7 +384,7 @@ body {
 .authorization {
   display: flex;
   align-items: center;
-  justify-self: end;
+  margin-left: auto;
 }
 
 .authorization-login, .authorization-registration {
@@ -1354,6 +1353,7 @@ body {
 .user {
   display: flex;
   flex-direction: column;
+  margin-left: auto;
 }
 
 .user-name {
