@@ -20,7 +20,7 @@
           <form class="search-header" method="get" action="https://echo.htmlacademy.ru">
             <input id="search-header-input" name="search" type="text">
             <label class="search-header-top" for="search-header-input">Поиск:</label>
-            <svg class="search-header-image" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg aria-hidden="true" focusable="false" class="search-header-image" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white" opacity=".3"/>
             </svg>
           </form>
@@ -113,20 +113,26 @@
           <a class="feature-link" href="#">Бесплатно</a>
           <img class="feature-image-delivery" src="img/icondelivery.svg" width="78" height="63" alt="Машинка">
         </div>
-        <div class="slider slider-wrapper-1">
+        <div class="slider">
           <ul class="slider-list">
-            <li class="slider-item slide slide-current">
+            <li class="slide slide-current">
               <h3 class="slider-title">Перфораторы</h3>
               <p class="slider-text">Настоящие мужские игрушки</p>
+              <img src="img/man.jpg" width="620" height="266" alt="Рабочий с перфоратором">
             </li>
-            <li class="slider-item slide">
+            <li class="slide">
               <h3 class="slider-title">Дрели</h3>
               <p class="slider-text">Соседям на радость!</p>
+              <img src="img/man-2.jpg" width="620" height="266" alt="Рабочий с дрелью">
             </li>
           </ul>
-          <button class="button-control-back" type="button" aria-label="Первый слайд"></button>
-          <button class="button-control-next" type="button" aria-label="Второй слайд"></button>
+          <button class="button-control-back" type="button" aria-label="Переход на предыдущий слайд"></button>
+          <button class="button-control-next" type="button" aria-label="Переход на следующий слайд"></button>
           <a class="button slider-button" href="catalog.html">Открыть каталог</a>
+          <div class="slider-controls">
+            <button type="button" aria-label="Первый слайд"></button>
+            <button class="current" type="button" aria-label="Второй слайд"></button>
+          </div>
         </div>
       </section>
 
@@ -306,7 +312,7 @@
           <p class="transport-text">Вы можете забрать товар сами,
             <br>заехав в наш офис:
           </p>
-          <a>
+          <a class="button-open-map">
             <img class="maps" src="img/map.png" width="300" height="158" alt="Пункт самовывоза находится по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19">
           </a>
           <a class="button button-maps" href="#">Заблудились? Напишите нам!</a>
