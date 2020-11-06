@@ -1,41 +1,47 @@
 //feedback
 
-const ButtonFeedback = document.querySelector(".button-maps");
-const loginPopup = document.querySelector(".modal-login");
-const loginClose = loginPopup.querySelector(".modal-close");
-const loginForm = loginPopup.querySelector(".login-form");
-const loginLogin = loginPopup.querySelector(".login-icon-user");
-const loginEmail = loginPopup.querySelector(".login-icon-email");
-const loginText = loginPopup.querySelector(".login-icon-text");
+const buttonFeedback = document.querySelector(".button-maps");
+const feedbackPopup = document.querySelector(".modal-login");
+const feedbackClose = feedbackPopup ? feedbackPopup.querySelector(".modal-close") : "";
+const feedbackForm = feedbackPopup ? feedbackPopup.querySelector(".login-form") : "";
+const feedbackLogin = feedbackPopup ? feedbackPopup.querySelector(".login-icon-user") : "";
+const feedbackEmail = feedbackPopup ? feedbackPopup.querySelector(".login-icon-email") : "";
+const feedbackText = feedbackPopup ? feedbackPopup.querySelector(".login-icon-text") : "";
 
 
-ButtonFeedback.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  loginPopup.classList.add("modal-show");
-  loginLogin.focus();
-});
-
-loginClose.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  loginPopup.classList.remove("modal-show");
-  loginPopup.classList.remove("modal-error");
-});
-
-loginForm.addEventListener("submit", function (evt) {
-  if (!loginLogin.value || !loginEmail.value || !loginText.value) {
+if (buttonFeedback) {
+  buttonFeedback.addEventListener("click", function (evt) {
     evt.preventDefault();
-    loginPopup.classList.add("modal-error");
-    loginPopup.offsetWidth = loginPopup.offsetWidth;
-    loginPopup.classList.add("modal-error");
-  }
-});
+    feedbackPopup.classList.add("modal-show");
+    feedbackLogin.focus();
+  });
+}
+
+if (feedbackClose) {
+  feedbackClose.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    feedbackPopup.classList.remove("modal-show");
+    feedbackPopup.classList.remove("modal-error");
+  });
+}
+
+if (feedbackForm) {
+  feedbackForm.addEventListener("submit", function (evt) {
+    if (!feedbackLogin.value || !feedbackEmail.value || !feedbackText.value) {
+      evt.preventDefault();
+      feedbackPopup.classList.remove("modal-error");
+      feedbackPopup.offsetWidth = feedbackPopup.offsetWidth;
+      feedbackPopup.classList.add("modal-error");
+    }
+  });
+}
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
-    if (loginPopup.classList.contains("modal-show")) {
+    if (feedbackPopup.classList.contains("modal-show")) {
       evt.preventDefault();
-      loginPopup.classList.remove("modal-show");
-      loginPopup.classList.remove("modal-error");
+      feedbackPopup.classList.remove("modal-show");
+      feedbackPopup.classList.remove("modal-error");
     }
   }
 });
@@ -44,17 +50,21 @@ window.addEventListener("keydown", function (evt) {
 
 const mapLink = document.querySelector(".button-open-map");
 const mapPopup = document.querySelector(".modal-map");
-const mapClose = mapPopup.querySelector(".modal-close");
+const mapClose = mapPopup ?  mapPopup.querySelector(".modal-close") : "";
 
-mapLink.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  mapPopup.classList.add("modal-show");
-});
+if (mapLink) {
+  mapLink.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    mapPopup.classList.add("modal-show");
+  });
+}
 
-mapClose.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  mapPopup.classList.remove("modal-show");
-});
+if (mapClose) {
+  mapClose.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    mapPopup.classList.remove("modal-show");
+  });
+}
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
@@ -67,26 +77,27 @@ window.addEventListener("keydown", function (evt) {
 
 //cart
 
+const cartLinks = document.querySelectorAll(".card-hover-buy");
+const cartPopup = document.querySelector(".modal-cart");
+const cartClose = cartPopup.querySelector(".modal-close");
 
-const CartLink = document.querySelectorAll(".card-hover-buy");
-const CartPopup = document.querySelector(".modal-cart");
-const CartClose = CartPopup.querySelector(".modal-close");
+for (const cartLink of cartLinks) {
+  cartLink.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    cartPopup.classList.add("modal-show");
+  });
+}
 
-CartLink.addEventListener("click", function (evt) {
+cartClose.addEventListener("click", function (evt) {
   evt.preventDefault();
-  CartPopup.classList.add("modal-show");
-});
-
-CartClose.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  CartPopup.classList.remove("modal-show");
+  cartPopup.classList.remove("modal-show");
 });
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
-    if (CartPopup.classList.contains("modal-show")) {
+    if (cartPopup.classList.contains("modal-show")) {
       evt.preventDefault();
-      CartPopup.classList.remove("modal-show");
+      cartPopup.classList.remove("modal-show");
     }
   }
 });
